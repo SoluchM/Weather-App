@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  color: white;
+}
+
+main{
+  min-height: 100vh;
+  padding: 25px;
+}
+.app{
+  background-size: cover;
+  background-position: bottom;
+}
+.search-box{
+  width: 100%;
+  margin: 0 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box .search-bar{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.search-box .search-bar:hover{
+  background-color:rgba(255, 255, 255, 0.8);
+}
+
+.location-box .location{
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+
+.location-box .date{
+  font-size: 18px;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 30px ;
+}
+
+.weather-box{
+  text-align: center;
+}
+
+.weather-box .info{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(10, 10, 10, 0.3);
+  border-radius: 16px;
+  padding: 15px 25px;
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+.weather-box .weather{
+  font-size: 20px;
+  font-weight: 300;
+}
+.pressure, .sun{
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error-message{
+  border-radius: 30px;
+  font-size: 50px;
+  width: 70%;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.55);
+}
+@media only screen and (max-width: 560px) {
+  .weather-box .info{
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .weather-box .info{
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .search-box .search-bar{
+    width: 70%;
+  }
+}
